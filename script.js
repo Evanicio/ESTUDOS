@@ -26,10 +26,8 @@ switch (profission) {
 
      break
 }
-*/
 
 
-/*
 function MaiorDeIdade(idade){
      if (idade >= 18){
           return  true ;
@@ -45,25 +43,18 @@ if(verificacao){
      console.log('È MAIOR de  idade');
 } else{
      console.log('È MENOR de idade');
-}
+} 
 
+function gravidade(){
+     console.log('A GRAVIDADE da lua e');
+     console.log(19.80);
+}
+console.log('Opá tudo bem!');
+gravidade();
 */
 
-//REFAZENDO
-function maiorDeIdade(idade){
-     if(idade >= 18){
-          return true ;
-     }
-     else{
-          return false;
-     }
+function somar(n1 , n2){
+     let resultado = n1 + n2
+     console.log('Resultado' +resultado);
 }
-
-let idade = 18;
-let verificacao = maiorDeIdade(idade);
-
-if(verificacao){
-     console.log('È MAIOR de idade');
-} else{
-     console.log('È MENOR de idade')
-}
+somar(19 , 10);
