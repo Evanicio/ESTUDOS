@@ -61,7 +61,7 @@ function somar(n1 , n2){
      console.log('Resultado' +resultado);
 }
 somar(19 , 10);
-*/
+
 //Exercicios
 
 function calcPct(n1 , n2){
@@ -76,13 +76,17 @@ console.log(`${Pct} % de ${x} e ${y}`);
 
 
 //espace #####################
+*/
 
-/*
-function calcPct(n1 , n2){
-     return(n2 / n1) *100;
-}
-let x = 12;
-let y = 14;
-let Pct = calcPct(x , y);
-console.log(`${Pct}% de ${x} e ${y}`);
- */
+
+/* Calcule o preço do imovel 
+ -m2 = 3.000
+ -Se tiver 1 quarto, o m2 e 1x
+ -Se tiver 2 quarto, o m2 e 1.2x
+ -Se tiver 3 quarto, o m2 e 1,5x
+ Uso da função:
+*/
+let metragem = 123;
+let quartos = 3;
+let preco = calcularImoveis(metragem, quartos);
+console.log(`A casa custa R$ ${preco}`); 
