@@ -27,6 +27,7 @@ switch (profission) {
      break
 }
 
+#################################################
 
 function MaiorDeIdade(idade){
      if (idade >= 18){
@@ -45,16 +46,43 @@ if(verificacao){
      console.log('È MENOR de idade');
 } 
 
+//###########################################
+
 function gravidade(){
      console.log('A GRAVIDADE da lua e');
      console.log(19.80);
 }
 console.log('Opá tudo bem!');
 gravidade();
-*/
+
 
 function somar(n1 , n2){
      let resultado = n1 + n2
      console.log('Resultado' +resultado);
 }
 somar(19 , 10);
+*/
+//Exercicios
+
+function calcPct(n1 , n2){
+     return(n2 / n1) *100;
+
+}
+
+let x = 40;
+let y = 10;
+let Pct = calcPct(x, y );
+console.log(`${Pct} % de ${x} e ${y}`);
+
+
+//espace #####################
+
+/*
+function calcPct(n1 , n2){
+     return(n2 / n1) *100;
+}
+let x = 12;
+let y = 14;
+let Pct = calcPct(x , y);
+console.log(`${Pct}% de ${x} e ${y}`);
+ */
