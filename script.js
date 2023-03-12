@@ -76,16 +76,15 @@ console.log(`${Pct} % de ${x} e ${y}`);
 
 
 //espace #####################
-*/
 
 
-/* Calcule o preço do imovel 
+
+ Calcule o preço do imovel 
  -m2 = 3.000
  -Se tiver 1 quarto, o m2 e 1x
  -Se tiver 2 quarto, o m2 e 1.2x
  -Se tiver 3 quarto, o m2 e 1,5x
  Uso da função:
-*/
 
 // exercios #2
 function calcularImoveis(metragem , quartos){
@@ -103,10 +102,32 @@ function calcularImoveis(metragem , quartos){
                preco = metragem * (m2 * 1.5);
 
      }
-     return preco;  
+     return preco;
 
 }
 let metragem = 123;
 let quartos = 3;
 let preco = calcularImoveis(metragem, quartos);
-console.log(`A casa custa R$ ${preco}`); 
+console.log(`A casa custa R$ ${preco}`);*/
+
+//VOU CONSEGUIR ACREDITO EM MIM :-)
+function calcularImoveis(metragem , quartos){
+     let m2 = 3000;
+     let preco = 0;
+     switch(quartos){
+          case 1:
+               default:
+                    preco = metragem * m2;
+                    break;
+                    case 2:
+                         preco = metragem * (m2 * 1.2);
+                         break;
+                         case 3:
+                              preco = metragem * (m2 * 1.5);
+     }
+     return preco;
+}
+let metragem = 123;
+let quartos = 3;
+let preco = calcularImoveis(metragem , quartos);
+console.log(`A Casa Custa No Seu Valor de R$ ${preco}`);
