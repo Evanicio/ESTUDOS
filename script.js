@@ -108,7 +108,7 @@ function calcularImoveis(metragem , quartos){
 let metragem = 123;
 let quartos = 3;
 let preco = calcularImoveis(metragem, quartos);
-console.log(`A casa custa R$ ${preco}`);*/
+console.log(`A casa custa R$ ${preco}`);
 
 //VOU CONSEGUIR ACREDITO EM MIM :-)
 function calcularImoveis(metragem , quartos){
@@ -131,3 +131,49 @@ let metragem = 123;
 let quartos = 3;
 let preco = calcularImoveis(metragem , quartos);
 console.log(`A Casa Custa No Seu Valor de R$ ${preco}`);
+
+########################################
+
+function validar(usuario , senha){
+     if(usuario === 'Evanicio' && senha === '1234'){
+          return true;
+     } else{
+          return false;
+     }
+}
+let usuario = 'Evanicio';
+let senha = '1234'
+let validacao = validar(usuario , senha);
+if(validacao){
+     console.log('Autorização Concedida');
+} else{
+     console.log('Autorização Negada');
+}
+
+//Arrow Function
+// PRIMEIRO EXEMPLO
+function somar ( a , b){
+     return a + b;
+}
+console.log(somar (1, 12))
+
+// SEGUNDO EXEMPLO
+const somar = (r , t) => {
+     return r + t;
+}
+console.log (somar( 12 , 45));
+
+//TERCEIRO EXEMPLO
+ const somar = (t,w) => t+w;
+ console.log(somar(12,23))
+ */
+//Quarto Exemplo
+
+function sobrenome(sob){
+     return 'João '  +sob;
+}
+console.log(sobrenome ('Augusto'));
+
+//Quinto exemplo
+const  sobrenome1 = sob1 => 'pedrin'+sob1;
+console.log (sobrenome1( 'pedrin'));
